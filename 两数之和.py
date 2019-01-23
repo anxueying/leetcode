@@ -8,6 +8,7 @@
 @time: 2019/1/23 18:06
 """
 
+import datetime
 
 class Solution:
     def twoSum(self, nums, target):
@@ -27,4 +28,7 @@ class Solution:
 
 # test
 t = Solution()
+begin = datetime.datetime.now()
 print(t.twoSum([2, 7, 11, 15], 9))
+end = datetime.datetime.now()
+print('运行时间：', end-begin)
